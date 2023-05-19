@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long 
+#define test(t) int t; cin >> t; while(t--)
+#define take_arr(n,a) int n; cin >> n; int a[n]
+#define zloop(i,n) for(int i=0; i<n; i++)
+#define oloop(i,n) for(int i=1; i<=n; i++)
+ 
+int main() {
+     int n;
+     cin >> n;
+     
+     string s; cin >> s;
+     int len = s.length();
+     int ones=0;
+     int zeroes=0;
+     for(int i=0; i<len; i++) {
+          if(s[i]=='1') ones++;
+          else zeroes++;
+     }
+     cout << abs(ones-zeroes) << "\n";
+}
