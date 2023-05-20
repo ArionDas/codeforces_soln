@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long 
+#define test(t) int t; cin >> t; while(t--)
+#define take_arr(n,a) int n; cin >> n; int a[n]
+
+
+int main() {
+     int n; cin >> n; int a[n];
+     for(int i=0; i<n; i++) {
+          cin >> a[i];
+     }
+     int psum=0;
+     int nsum=0;
+     for(int i=0; i<n; i++) {
+          if(a[i]>=0) psum += a[i];
+          else nsum += a[i];
+     }
+     
+     cout << psum-nsum << "\n";
+}
